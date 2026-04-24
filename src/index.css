@@ -1,4 +1,5 @@
 /* Base reset and global styles, tailwind utilities are provided externally in this environment */
+@import "tailwindcss";
 *, *::before, *::after {
   box-sizing: border-box;
 }
