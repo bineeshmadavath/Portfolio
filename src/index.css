@@ -32,3 +32,51 @@ body, html {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+/* Config image reveal animation: pan horizontally from far-left to far-right */
+@keyframes config-pan-x {
+  0% {
+    object-position: left center;
+    transform: scale(1.06);
+    opacity: 0.98;
+  }
+  100% {
+    object-position: right center;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-config-pan-x {
+  animation: config-pan-x 1.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+/* Horizontal sheen sweep to match image pan */
+@keyframes spotlight-sweep-x {
+  0% {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.22) 0%,
+      rgba(255, 255, 255, 0) 28%
+    );
+    background-size: 220% 100%;
+    background-position: -70% 0;
+  }
+  70% {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 12%,
+      rgba(255, 255, 255, 0.14) 48%,
+      rgba(255, 255, 255, 0) 84%
+    );
+    background-size: 220% 100%;
+    background-position: 110% 0;
+  }
+  100% {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+.animate-spotlight-x {
+  animation: spotlight-sweep-x 1.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
