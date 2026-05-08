@@ -4,12 +4,12 @@ export default function ProjectCard({ project }) {
   return (
     <Link 
       to={project.link} 
-      className="group relative flex flex-col gap-4 outline-none rounded-2xl p-3 hover:bg-white transition-colors border border-transparent hover:border-neutral-200 hover:shadow-sm"
+      className="group relative flex flex-col gap-4 outline-none rounded-2xl p-3 hover:bg-white/30 transition-colors border border-transparent hover:border-neutral-200 hover:shadow-sm"
       onClick={(e) => {
         if(project.link === '#') e.preventDefault()
       }}
     >
-      <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-neutral-100 border border-neutral-200/50">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-neutral-100 border border-neutral-200/50 flex items-center justify-center">
         <img 
           src={project.image} 
           alt={project.title} 

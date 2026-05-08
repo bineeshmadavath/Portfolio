@@ -4,7 +4,7 @@ import heroImage from '../../heroimage-physiotherapy.png'
 
 export default function PhysioBooking() {
   return (
-    <div className="animate-in fade-in duration-700 slide-in-from-bottom-4 pb-24 bg-white">
+    <div className="animate-in fade-in duration-700 slide-in-from-bottom-4 pb-24 bg-white rounded-[20px]">
       {/* Header / Back Navigation */}
       <div className="max-w-6xl mx-auto px-6 pt-8 pb-4">
         <Link 
@@ -17,7 +17,7 @@ export default function PhysioBooking() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-6xl mx-auto px-6 py-12 lg:py-20 flex flex-col lg:flex-row items-center gap-16 border-b border-neutral-100">
+      <div className="max-w-6xl mx-auto px-6 py-12 lg:py-20 flex flex-col lg:flex-row items-center gap-16">
         <div className="flex-1">
           <div className="inline-block px-3 py-1 bg-violet-50 text-violet-600 font-semibold text-xs tracking-wider uppercase rounded-full mb-6">
             UX Case Study
@@ -26,58 +26,61 @@ export default function PhysioBooking() {
             Rewake Physio & Rehab<br />
             Appointment Platform
           </h1>
-          <p className="text-lg lg:text-xl text-neutral-500 mb-10 max-w-xl">
+          <p className="text-lg lg:text-xl text-neutral-500 max-w-xl">
             Simplifying physiotherapy appointment booking for patients and streamlining operations for clinics.
           </p>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            <div className="flex flex-col gap-2">
-              <div className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-600">
-                <iconify-icon icon="solar:user-circle-linear" width="20"></iconify-icon>
-              </div>
-              <div>
-                <div className="text-sm font-bold text-neutral-900">Role</div>
-                <div className="text-sm text-neutral-500">UX Designer</div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-600">
-                <iconify-icon icon="solar:pen-new-square-linear" width="20"></iconify-icon>
-              </div>
-              <div>
-                <div className="text-sm font-bold text-neutral-900">Tools</div>
-                <div className="text-sm text-neutral-500">Figma, FigJam</div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-600">
-                <iconify-icon icon="solar:calendar-linear" width="20"></iconify-icon>
-              </div>
-              <div>
-                <div className="text-sm font-bold text-neutral-900">Timeline</div>
-                <div className="text-sm text-neutral-500">4 Weeks</div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-600">
-                <iconify-icon icon="solar:devices-linear" width="20"></iconify-icon>
-              </div>
-              <div>
-                <div className="text-sm font-bold text-neutral-900">Project Type</div>
-                <div className="text-sm text-neutral-500">Web Application</div>
-              </div>
-            </div>
-          </div>
         </div>
-        
+
         {/* Hero Mockup */}
         <div className="flex-1 w-full relative">
           <div className="bg-neutral-100 rounded-2xl border border-neutral-200 shadow-sm relative overflow-hidden group">
-            <img 
-              src={heroImage} 
-              alt="Rewake Physio Appointment Platform Mockup" 
-              className="w-full h-auto block transition-transform duration-700 group-hover:scale-[1.02]" 
+            <img
+              src={heroImage}
+              alt="Rewake Physio Appointment Platform Mockup"
+              className="w-full h-auto block transition-transform duration-700 group-hover:scale-[1.02]"
             />
+          </div>
+        </div>
+      </div>
+
+      {/* Project Meta — full-width single column below hero image */}
+      <div className="max-w-6xl mx-auto px-6 pb-12 border-b border-neutral-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-neutral-50 border border-neutral-200 rounded-2xl p-6 lg:p-8">
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0">
+              <iconify-icon icon="solar:user-circle-linear" width="20"></iconify-icon>
+            </div>
+            <div>
+              <div className="text-sm font-bold text-neutral-900">Role</div>
+              <div className="text-sm text-neutral-500">UX Designer</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0">
+              <iconify-icon icon="solar:pen-new-square-linear" width="20"></iconify-icon>
+            </div>
+            <div>
+              <div className="text-sm font-bold text-neutral-900">Tools</div>
+              <div className="text-sm text-neutral-500">Figma, FigJam</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0">
+              <iconify-icon icon="solar:calendar-linear" width="20"></iconify-icon>
+            </div>
+            <div>
+              <div className="text-sm font-bold text-neutral-900">Timeline</div>
+              <div className="text-sm text-neutral-500">4 Weeks</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0">
+              <iconify-icon icon="solar:devices-linear" width="20"></iconify-icon>
+            </div>
+            <div>
+              <div className="text-sm font-bold text-neutral-900">Project Type</div>
+              <div className="text-sm text-neutral-500">Web Application</div>
+            </div>
           </div>
         </div>
       </div>
@@ -526,4 +529,4 @@ export default function PhysioBooking() {
 
     </div>
   )
-}
+}

@@ -20,8 +20,7 @@ export default function Navbar() {
   }, [location.pathname])
 
   const navLinks = [
-    { name: 'Work', path: '/work' },
-    { name: 'About', path: '/about' },
+    { name: 'Case Studies', path: '/work' },
     { name: 'Contact', path: '/contact' },
   ]
 
@@ -56,17 +55,16 @@ export default function Navbar() {
             >
               {link.name}
               {location.pathname === link.path && (
-                <span className="absolute -bottom-1.5 left-0 w-full h-[1px] bg-neutral-900 rounded-full" />
+                <span className="absolute -bottom-1.5 left-0 w-full h-[3px] bg-neutral-900 rounded-full" />
               )}
             </Link>
           ))}
-          <a 
-            href="/resume.pdf" 
+          <Link 
+            to="/resume" 
             className="text-sm font-medium px-4 py-2 rounded-full bg-neutral-900 hover:bg-neutral-800 border border-transparent transition-all text-white"
-            onClick={(e) => e.preventDefault()}
           >
             Resume
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Toggle */}
@@ -98,13 +96,12 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <a 
-            href="#" 
+          <Link 
+            to="/resume" 
             className="text-sm font-medium px-4 py-2 mt-2 rounded-lg bg-neutral-900 border border-transparent text-center text-white"
-            onClick={(e) => e.preventDefault()}
           >
             Resume
-          </a>
+          </Link>
         </div>
       )}
     </header>

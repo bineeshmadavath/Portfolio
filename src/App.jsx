@@ -3,10 +3,12 @@ import { useEffect } from 'react'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Work from './pages/Work'
-import About from './pages/About'
+
 import Contact from './pages/Contact'
 import PhysioBooking from './pages/PhysioBooking'
 import Smartops from './pages/Smartops'
+import Resume from './pages/Resume'
+import GreenEye from './pages/GreenEye'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -28,8 +30,9 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/work/smartops" element={<Smartops />} />
           <Route path="/work/physio-booking" element={<PhysioBooking />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/work/green-eye" element={<GreenEye />} />
         </Routes>
       </Layout>
     </>

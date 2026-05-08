@@ -9,6 +9,7 @@ import currentDrClause from '../../current-03.png'
 import infFoi from '../../inf-01.png'
 import infTable from '../../inf-02.png'
 import infClause from '../../inf-03.png'
+import heroImage from '../../heroimage-smartvision.png'
 
 export default function Smartops() {
   const [activeConfig, setActiveConfig] = useState('foi')
@@ -76,7 +77,7 @@ export default function Smartops() {
   ]
   const activeDrPreview = drTabs.find(tab => tab.id === activeDrTab)
   return (
-    <div className="animate-in fade-in duration-700 slide-in-from-bottom-4 pb-24 bg-white">
+    <div className="animate-in fade-in duration-700 slide-in-from-bottom-4 pb-24 bg-white rounded-[20px]">
       {/* Header / Back Navigation */}
       <div className="max-w-6xl mx-auto px-6 pt-8 pb-4">
         <Link 
@@ -89,7 +90,7 @@ export default function Smartops() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-6xl mx-auto px-6 py-12 lg:py-20 flex flex-col lg:flex-row items-center gap-16 border-b border-neutral-100">
+      <div className="max-w-6xl mx-auto px-6 py-12 lg:py-20 flex flex-col lg:flex-row items-center gap-16">
         <div className="flex-1">
           <div className="inline-block px-3 py-1 bg-violet-50 text-violet-600 font-semibold text-xs tracking-wider uppercase rounded-full mb-6">
             UX Case Study
@@ -98,58 +99,61 @@ export default function Smartops() {
             AI-Powered Inference<br />
             Document Review Experience
           </h1>
-          <p className="text-lg lg:text-xl text-neutral-500 mb-10 max-w-xl">
+          <p className="text-lg lg:text-xl text-neutral-500 max-w-xl">
             Designing an intuitive AI inference layer that surfaces contextual business insights directly in the document review screen without compromising trust or mixing facts with interpretations.
           </p>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            <div className="flex flex-col gap-2">
-              <div className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-600">
-                <iconify-icon icon="solar:user-circle-linear" width="20"></iconify-icon>
-              </div>
-              <div>
-                <div className="text-sm font-bold text-neutral-900">Role</div>
-                <div className="text-sm text-neutral-500">UX/Product Designer</div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-600">
-                <iconify-icon icon="solar:pen-new-square-linear" width="20"></iconify-icon>
-              </div>
-              <div>
-                <div className="text-sm font-bold text-neutral-900">Tools</div>
-                <div className="text-sm text-neutral-500">Figma, React</div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-600">
-                <iconify-icon icon="solar:calendar-linear" width="20"></iconify-icon>
-              </div>
-              <div>
-                <div className="text-sm font-bold text-neutral-900">Timeline</div>
-                <div className="text-sm text-neutral-500">3 Months</div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-600">
-                <iconify-icon icon="solar:devices-linear" width="20"></iconify-icon>
-              </div>
-              <div>
-                <div className="text-sm font-bold text-neutral-900">Project Type</div>
-                <div className="text-sm text-neutral-500">AI/ML Integration</div>
-              </div>
-            </div>
-          </div>
         </div>
-        
+
         {/* Hero Mockup */}
         <div className="flex-1 w-full relative">
           <div className="bg-neutral-100 rounded-2xl border border-neutral-200 shadow-sm relative overflow-hidden group">
-            <img 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" 
-              alt="AI Inference Document Review Screen Mockup" 
-              className="w-full h-auto block transition-transform duration-700 group-hover:scale-[1.02]" 
+            <img
+              src={heroImage}
+              alt="AI Inference Document Review Screen Mockup"
+              className="w-full h-auto block transition-transform duration-700 group-hover:scale-[1.02]"
             />
+          </div>
+        </div>
+      </div>
+
+      {/* Project Meta — full-width single column below hero image */}
+      <div className="max-w-6xl mx-auto px-6 pb-12 border-b border-neutral-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 rounded-2xl p-6 lg:p-8" >
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
+              <iconify-icon icon="solar:user-circle-linear" width="20"></iconify-icon>
+            </div>
+            <div >
+              <div className="text-sm font-bold text-neutral-900">Role</div>
+              <div className="text-sm text-neutral-500">UX/Product Designer</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
+              <iconify-icon icon="solar:pen-new-square-linear" width="20"></iconify-icon>
+            </div>
+            <div>
+              <div className="text-sm font-bold text-neutral-900">Tools</div>
+              <div className="text-sm text-neutral-500">Figma, React</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
+              <iconify-icon icon="solar:calendar-linear" width="20"></iconify-icon>
+            </div>
+            <div>
+              <div className="text-sm font-bold text-neutral-900">Timeline</div>
+              <div className="text-sm text-neutral-500">1 Week</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
+              <iconify-icon icon="solar:devices-linear" width="20"></iconify-icon>
+            </div>
+            <div>
+              <div className="text-sm font-bold text-neutral-900">Project Type</div>
+              <div className="text-sm text-neutral-500">AI/ML Integration</div>
+            </div>
           </div>
         </div>
       </div>
@@ -194,25 +198,25 @@ export default function Smartops() {
                 <iconify-icon icon="solar:graph-up-linear" width="24"></iconify-icon>
               </div>
               <div>
-                <div className="font-bold text-emerald-600 text-sm mb-1">Business Goal</div>
+                <div className="font-bold text-neutral-900 text-sm mb-1">Business Goal</div>
                 <div className="text-sm text-neutral-600">Enable faster, more confident decisions by bringing business interpretation closer to source data.</div>
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl border border-neutral-100 bg-white shadow-sm">
-              <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 shrink-0">
+              <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-500 shrink-0">
                 <iconify-icon icon="solar:user-linear" width="24"></iconify-icon>
               </div>
               <div>
-                <div className="font-bold text-blue-600 text-sm mb-1">User Goal</div>
+                <div className="font-bold text-neutral-900 text-sm mb-1">User Goal</div>
                 <div className="text-sm text-neutral-600">Surface AI-generated inferences clearly separated from extraction, supporting field-linked insights.</div>
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl border border-neutral-100 bg-white shadow-sm">
-              <div className="w-12 h-12 rounded-full bg-violet-50 flex items-center justify-center text-violet-500 shrink-0">
+              <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-500 shrink-0">
                 <iconify-icon icon="solar:settings-linear" width="24"></iconify-icon>
               </div>
               <div>
-                <div className="font-bold text-violet-600 text-sm mb-1">Design Goal</div>
+                <div className="font-bold text-neutral-900 text-sm mb-1">Design Goal</div>
                 <div className="text-sm text-neutral-600">Maintain explainability and reviewer trust while minimizing disruption to existing workflows.</div>
               </div>
             </div>
@@ -228,7 +232,7 @@ export default function Smartops() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-500 shrink-0">
+            <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
                <iconify-icon icon="solar:user-linear" width="24"></iconify-icon>
             </div>
             <div>
@@ -237,7 +241,7 @@ export default function Smartops() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 shrink-0">
+            <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
                <iconify-icon icon="solar:users-group-rounded-linear" width="24"></iconify-icon>
             </div>
             <div>
@@ -246,7 +250,7 @@ export default function Smartops() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-violet-50 flex items-center justify-center text-violet-500 shrink-0">
+            <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
                <iconify-icon icon="solar:shield-check-linear" width="24"></iconify-icon>
             </div>
             <div>
@@ -255,7 +259,7 @@ export default function Smartops() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center text-orange-500 shrink-0">
+            <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
                <iconify-icon icon="solar:settings-linear" width="24"></iconify-icon>
             </div>
             <div>
@@ -398,19 +402,19 @@ export default function Smartops() {
                     onClick={() => setActiveConfig(tab.id)}
                     className={`text-left p-4 rounded-xl border transition-all duration-300 group ${
                       activeConfig === tab.id
-                        ? 'bg-violet-600 border-violet-600 text-white shadow-lg shadow-violet-200'
-                        : 'bg-white border-neutral-200 text-neutral-700 hover:border-violet-300 hover:bg-violet-50'
+                        ? 'bg-neutral-900 border-neutral-900 text-white shadow-lg shadow-neutral-200'
+                        : 'bg-white border-neutral-200 text-neutral-700 hover:border-neutral-300 hover:bg-white'
                     }`}
                   >
                     <div className={`font-semibold text-sm mb-1 ${activeConfig === tab.id ? 'text-white' : 'text-neutral-900'}`}>
                       {tab.label}
                     </div>
-                    <div className={`text-xs leading-relaxed ${activeConfig === tab.id ? 'text-violet-200' : 'text-neutral-500'}`}>
+                    <div className={`text-xs leading-relaxed ${activeConfig === tab.id ? 'text-neutral-300' : 'text-neutral-500'}`}>
                       {tab.description}
                     </div>
                     {activeConfig === tab.id && (
-                      <div className="mt-3 pt-3 border-t border-violet-500">
-                        <div className="text-xs text-violet-200 flex items-center gap-1.5">
+                      <div className="mt-3 pt-3 border-t border-neutral-700">
+                        <div className="text-xs text-neutral-300 flex items-center gap-1.5">
                           <iconify-icon icon="solar:lightbulb-bolt-linear" width="14"></iconify-icon>
                           <span>{tab.benefit}</span>
                         </div>
