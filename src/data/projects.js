@@ -14,15 +14,6 @@ export const projects = [
     link: '/work/smartops'
   },
   {
-    id: 'physio-booking',
-    title: 'Physiotherapy Booking System',
-    category: 'Healthcare Platform',
-    description: 'An end-to-end patient portal and clinic management system streamlining appointment bookings, reducing no-shows, and optimizing practitioner schedules.',
-    image: heroImagePhysio,
-    tags: ['UX Research', 'Healthcare', 'SaaS', 'Prototyping'],
-    link: '/work/physio-booking'
-  },
-  {
     id: 'green-eye',
     title: 'Green Eye',
     category: 'Civic Engagement & Sustainability',
@@ -30,5 +21,14 @@ export const projects = [
     image: thumbnailGreenEye,
     tags: ['Civic Tech', 'Accessibility', 'Gamification', 'React'],
     link: '/work/green-eye'
+  },
+  {
+    id: 'physio-booking',
+    title: 'Physiotherapy Booking System',
+    category: 'Healthcare Platform',
+    description: 'An end-to-end patient portal and clinic management system streamlining appointment bookings, reducing no-shows, and optimizing practitioner schedules.',
+    image: heroImagePhysio,
+    tags: ['UX Research', 'Healthcare', 'SaaS', 'Prototyping'],
+    link: '/work/physio-booking'
   }
 ];

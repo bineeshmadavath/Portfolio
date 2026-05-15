@@ -35,9 +35,9 @@ export default function About() {
                 },
                 {
                   role: "UX/UI Consultant",
-                  company: "Physiotherapy Booking Platform",
+                  company: "Green Eye Case Study",
                   period: "2020 — 2021",
-                  desc: "Led the end-to-end UX design of a comprehensive clinic management and patient booking system. Conducted user research with practitioners and designed intuitive scheduling workflows, reducing appointment no-shows by 40%."
+                  desc: "Led the end-to-end UX design of a civic engagement platform for environmental action. Conducted user research, designed reporting and reward workflows, and improved community participation through gamification and accessibility."
                 },
                 {
                   role: "Product Designer / UI Developer",
@@ -77,8 +77,8 @@ export default function About() {
         <div className="lg:col-span-5 flex flex-col gap-8">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200 relative">
             <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" 
-              alt="Design and tech workspace" 
+              src="/bineesh-profile-v2.png" 
+              alt="Bineesh Profile" 
               className="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
             />
             <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-2xl pointer-events-none"></div>

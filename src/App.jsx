@@ -9,6 +9,7 @@ import PhysioBooking from './pages/PhysioBooking'
 import Smartops from './pages/Smartops'
 import Resume from './pages/Resume'
 import GreenEye from './pages/GreenEye'
+import CreativeWorks from './pages/CreativeWorks'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -33,6 +34,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/work/green-eye" element={<GreenEye />} />
+          <Route path="/creative-works" element={<CreativeWorks />} />
         </Routes>
       </Layout>
     </>

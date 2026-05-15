@@ -21,6 +21,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Case Studies', path: '/work' },
+    { name: 'Creative Works', path: '/creative-works' },
     { name: 'Contact', path: '/contact' },
   ]
 

@@ -92,7 +92,7 @@ export default function Smartops() {
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-6 py-12 lg:py-20 flex flex-col lg:flex-row items-center gap-16">
         <div className="flex-1">
-          <div className="inline-block px-3 py-1 bg-violet-50 text-violet-600 font-semibold text-xs tracking-wider uppercase rounded-full mb-6">
+          <div className="inline-block px-3 py-1 bg-violet-50 text-[#0097AC] font-semibold text-xs tracking-wider uppercase rounded-full mb-6">
             UX Case Study
           </div>
           <h1 className="text-4xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-[1.1] tracking-tight">
@@ -120,17 +120,17 @@ export default function Smartops() {
       <div className="max-w-6xl mx-auto px-6 pb-12 border-b border-neutral-100">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 rounded-2xl p-6 lg:p-8" >
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
-              <iconify-icon icon="solar:user-circle-linear" width="20"></iconify-icon>
+            <div className="w-10 h-10 rounded-full border flex items-center justify-center" style={{ borderColor: '#c4f1f7', backgroundColor: '#c4f1f7' }}>
+              <iconify-icon icon="solar:user-circle-linear" width="20" className="text-neutral-600" />
             </div>
-            <div >
+            <div>
               <div className="text-sm font-bold text-neutral-900">Role</div>
               <div className="text-sm text-neutral-500">UX/Product Designer</div>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
-              <iconify-icon icon="solar:pen-new-square-linear" width="20"></iconify-icon>
+            <div className="w-10 h-10 rounded-full border flex items-center justify-center" style={{ borderColor: '#c4f1f7', backgroundColor: '#c4f1f7' }}>
+              <iconify-icon icon="solar:pen-new-square-linear" width="20" className="text-neutral-600" />
             </div>
             <div>
               <div className="text-sm font-bold text-neutral-900">Tools</div>
@@ -138,8 +138,8 @@ export default function Smartops() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
-              <iconify-icon icon="solar:calendar-linear" width="20"></iconify-icon>
+            <div className="w-10 h-10 rounded-full border flex items-center justify-center" style={{ borderColor: '#c4f1f7', backgroundColor: '#c4f1f7' }}>
+              <iconify-icon icon="solar:calendar-linear" width="20" className="text-neutral-600" />
             </div>
             <div>
               <div className="text-sm font-bold text-neutral-900">Timeline</div>
@@ -147,8 +147,8 @@ export default function Smartops() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-full border border-neutral-200 bg-white flex items-center justify-center text-neutral-600 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
-              <iconify-icon icon="solar:devices-linear" width="20"></iconify-icon>
+            <div className="w-10 h-10 rounded-full border flex items-center justify-center" style={{ borderColor: '#c4f1f7', backgroundColor: '#c4f1f7' }}>
+              <iconify-icon icon="solar:devices-linear" width="20" className="text-neutral-600" />
             </div>
             <div>
               <div className="text-sm font-bold text-neutral-900">Project Type</div>
@@ -163,7 +163,7 @@ export default function Smartops() {
         
         {/* 01 THE PROBLEM */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-6 flex items-center gap-2">
+          <h2 className="text-sm font-bold text-[#0097AC] tracking-wider uppercase mb-6 flex items-center gap-2">
             <span>01</span> THE PROBLEM
           </h2>
           <p className="text-neutral-600 mb-8 leading-relaxed">
@@ -189,13 +189,13 @@ export default function Smartops() {
 
         {/* 02 PROJECT GOALS */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-6 flex items-center gap-2">
+          <h2 className="text-sm font-bold text-[#0097AC] tracking-wider uppercase mb-6 flex items-center gap-2">
             <span>02</span> PROJECT GOALS
           </h2>
           <div className="space-y-4">
             <div className="flex gap-4 p-4 rounded-xl border border-neutral-100 bg-white shadow-sm">
-              <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-500 shrink-0">
-                <iconify-icon icon="solar:graph-up-linear" width="24"></iconify-icon>
+              <div className="w-12 h-12 flex items-center justify-center shrink-0">
+                <iconify-icon icon="solar:graph-up-linear" width="24" class="text-neutral-500" />
               </div>
               <div>
                 <div className="font-bold text-neutral-900 text-sm mb-1">Business Goal</div>
@@ -203,8 +203,8 @@ export default function Smartops() {
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl border border-neutral-100 bg-white shadow-sm">
-              <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-500 shrink-0">
-                <iconify-icon icon="solar:user-linear" width="24"></iconify-icon>
+              <div className="w-12 h-12 flex items-center justify-center shrink-0">
+                <iconify-icon icon="solar:user-linear" width="24" class="text-neutral-500" />
               </div>
               <div>
                 <div className="font-bold text-neutral-900 text-sm mb-1">User Goal</div>
@@ -212,8 +212,8 @@ export default function Smartops() {
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl border border-neutral-100 bg-white shadow-sm">
-              <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-500 shrink-0">
-                <iconify-icon icon="solar:settings-linear" width="24"></iconify-icon>
+              <div className="w-12 h-12 flex items-center justify-center shrink-0">
+                <iconify-icon icon="solar:settings-linear" width="24" class="text-neutral-500" />
               </div>
               <div>
                 <div className="font-bold text-neutral-900 text-sm mb-1">Design Goal</div>
@@ -227,13 +227,15 @@ export default function Smartops() {
 
       {/* 03 USERS & PAIN POINTS */}
       <div className="max-w-6xl mx-auto px-6 pb-20 border-b border-neutral-100">
-        <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-8 flex items-center gap-2">
-          <span>03</span> PRIMARY USERS
+        <h2 className="text-sm font-bold text-[#0097AC] tracking-wider uppercase mb-8 flex items-center gap-2">
+        <span>03</span> PRIMARY USERS
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4">
             <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
-               <iconify-icon icon="solar:user-linear" width="24"></iconify-icon>
+               <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#c4f1f7' }}>
+                 <iconify-icon icon="solar:user-linear" width="24" className="text-neutral-600" />
+               </div>
             </div>
             <div>
               <div className="font-bold text-neutral-900 text-sm mb-1">Document Reviewers</div>
@@ -242,7 +244,9 @@ export default function Smartops() {
           </div>
           <div className="flex flex-col gap-4">
             <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
-               <iconify-icon icon="solar:users-group-rounded-linear" width="24"></iconify-icon>
+               <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#c4f1f7' }}>
+                 <iconify-icon icon="solar:users-group-rounded-linear" width="24" className="text-neutral-600" />
+               </div>
             </div>
             <div>
               <div className="font-bold text-neutral-900 text-sm mb-1">Compliance Analysts</div>
@@ -251,7 +255,9 @@ export default function Smartops() {
           </div>
           <div className="flex flex-col gap-4">
             <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
-               <iconify-icon icon="solar:shield-check-linear" width="24"></iconify-icon>
+               <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#c4f1f7' }}>
+                 <iconify-icon icon="solar:shield-check-linear" width="24" className="text-neutral-600" />
+               </div>
             </div>
             <div>
               <div className="font-bold text-neutral-900 text-sm mb-1">Legal Review Teams</div>
@@ -260,7 +266,9 @@ export default function Smartops() {
           </div>
           <div className="flex flex-col gap-4">
             <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 shrink-0" style={{ backgroundColor: 'var(--brand-accent)' }}>
-               <iconify-icon icon="solar:settings-linear" width="24"></iconify-icon>
+               <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#c4f1f7' }}>
+                 <iconify-icon icon="solar:settings-linear" width="24" className="text-neutral-600" />
+               </div>
             </div>
             <div>
               <div className="font-bold text-neutral-900 text-sm mb-1">Business Admins</div>
@@ -329,23 +337,12 @@ export default function Smartops() {
                       : 'border-neutral-200 bg-neutral-50 text-neutral-700 hover:border-neutral-300 hover:bg-white'
                   }`}
                 >
-                  <div className="mb-3 flex items-center gap-3">
-                    <div className={`flex h-10 w-10 items-center justify-center rounded-full shrink-0 ${
-                      activeDrTab === tab.id
-                        ? 'bg-white/12 text-white'
-                        : tab.accent === 'violet'
-                          ? 'bg-violet-50 text-violet-600'
-                          : tab.accent === 'blue'
-                            ? 'bg-blue-50 text-blue-600'
-                            : 'bg-emerald-50 text-emerald-600'
-                    }`}>
-                      <iconify-icon icon={tab.icon} width="20"></iconify-icon>
-                    </div>
-                    <div className={`font-semibold ${activeDrTab === tab.id ? 'text-white' : 'text-neutral-900'}`}>
+                  <div className="mb-3">
+                    <div className={`font-semibold text-left ${activeDrTab === tab.id ? 'text-white' : 'text-neutral-900'}`}>
                       {tab.label}
                     </div>
                   </div>
-                  <p className={`text-sm leading-relaxed ${activeDrTab === tab.id ? 'text-neutral-300' : 'text-neutral-600'}`}>
+                  <p className={`text-sm leading-relaxed text-left ${activeDrTab === tab.id ? 'text-neutral-300' : 'text-neutral-600'}`}>
                     {tab.description}
                   </p>
                 </button>
@@ -379,8 +376,8 @@ export default function Smartops() {
 
       {/* 04 PROPOSED SOLUTION */}
       <div className="max-w-6xl mx-auto px-6 py-24 border-b border-neutral-100">
-        <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-12 flex items-center gap-2">
-          <span>04</span> PROPOSED SOLUTION
+        <h2 className="text-sm font-bold text-[#0097AC] tracking-wider uppercase mb-12 flex items-center gap-2">
+        <span>04</span> PROPOSED SOLUTION
         </h2>
         
         <div className="space-y-16">
@@ -459,18 +456,18 @@ export default function Smartops() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-5 bg-emerald-50 rounded-xl border border-emerald-200">
-                <div className="font-bold text-neutral-900 mb-2">Progressive Disclosure</div>
-                <p className="text-sm text-neutral-600">Show inference summary, expand for detailed explanation</p>
-              </div>
-              <div className="p-5 bg-emerald-50 rounded-xl border border-emerald-200">
-                <div className="font-bold text-neutral-900 mb-2">Contextual Placement</div>
-                <p className="text-sm text-neutral-600">Inference stays near source data with evidence highlighting</p>
-              </div>
-              <div className="p-5 bg-emerald-50 rounded-xl border border-emerald-200">
-                <div className="font-bold text-neutral-900 mb-2">Visual Hierarchy</div>
-                <p className="text-sm text-neutral-600">Extraction first, inference second with clear separation</p>
-              </div>
+                <div className="p-5 bg-smartops-accent border-[#e0f7fa] rounded-xl border">
+                    <div className="font-bold text-neutral-900 mb-2">Progressive Disclosure</div>
+                    <p className="text-sm text-neutral-600">Show inference summary, expand for detailed explanation</p>
+                  </div>
+                  <div className="p-5 bg-smartops-accent border-[#e0f7fa] rounded-xl border">
+                    <div className="font-bold text-neutral-900 mb-2">Contextual Placement</div>
+                    <p className="text-sm text-neutral-600">Inference stays near source data with evidence highlighting</p>
+                  </div>
+                  <div className="p-5 bg-smartops-accent border-[#e0f7fa] rounded-xl border">
+                    <div className="font-bold text-neutral-900 mb-2">Visual Hierarchy</div>
+                    <p className="text-sm text-neutral-600">Extraction first, inference second with clear separation</p>
+                  </div>
             </div>
           </div>
         </div>
@@ -478,8 +475,8 @@ export default function Smartops() {
 
       {/* 05 DETAILED UX SOLUTION */}
       <div className="max-w-6xl mx-auto px-6 py-24 border-b border-neutral-100">
-        <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-12 flex items-center gap-2">
-          <span>05</span> DETAILED UX SOLUTION
+        <h2 className="text-sm font-bold text-[#0097AC] tracking-wider uppercase mb-12 flex items-center gap-2">
+        <span>05</span> DETAILED UX SOLUTION
         </h2>
         
         <div className="space-y-16">
@@ -516,15 +513,15 @@ export default function Smartops() {
               {/* Horizontal pillars (FOIs only) */}
               {section.showPillars && (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                  <div className="p-5 bg-emerald-50 rounded-xl border border-emerald-200">
+                  <div className="p-5 bg-smartops-accent border-[#e0f7fa] rounded-xl border">
                     <div className="font-bold text-neutral-900 mb-2">🟢 Rule Pass / 🔴 Rule Fail</div>
                     <p className="text-sm text-neutral-600">Visual outcome indicator for quick at-a-glance assessment</p>
                   </div>
-                  <div className="p-5 bg-emerald-50 rounded-xl border border-emerald-200">
+                  <div className="p-5 bg-smartops-accent border-[#e0f7fa] rounded-xl border">
                     <div className="font-bold text-neutral-900 mb-2">One-Line Preview</div>
                     <p className="text-sm text-neutral-600">Summary statement with expandable detailed view</p>
                   </div>
-                  <div className="p-5 bg-emerald-50 rounded-xl border border-emerald-200">
+                  <div className="p-5 bg-smartops-accent border-[#e0f7fa] rounded-xl border">
                     <div className="font-bold text-neutral-900 mb-2">Evidence Highlighting</div>
                     <p className="text-sm text-neutral-600">Click inference to highlight supporting evidence in viewer</p>
                   </div>
@@ -559,8 +556,8 @@ export default function Smartops() {
 
       {/* 06 DESIGN PRINCIPLES & SUCCESS METRICS */}
       <div className="max-w-6xl mx-auto px-6 py-24 border-b border-neutral-100">
-        <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-12 flex items-center gap-2">
-          <span>06</span> DESIGN PRINCIPLES
+        <h2 className="text-sm font-bold text-[#0097AC] tracking-wider uppercase mb-12 flex items-center gap-2">
+        <span>06</span> DESIGN PRINCIPLES
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
@@ -608,8 +605,8 @@ export default function Smartops() {
 
       {/* 07 SUCCESS METRICS */}
       <div className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-12 flex items-center gap-2">
-          <span>07</span> SUCCESS METRICS
+        <h2 className="text-sm font-bold text-[#0097AC] tracking-wider uppercase mb-12 flex items-center gap-2">
+        <span>07</span> SUCCESS METRICS
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -618,8 +615,8 @@ export default function Smartops() {
             <div className="space-y-4">
               {[
                 { label: "Reduced downstream validation effort", icon: "solar:graph-down-linear" },
-                { label: "Faster document review turnaround", icon: "solar:lightning-charge-linear" },
-                { label: "Higher reviewer productivity", icon: "solar:trending-up-linear" },
+                { label: "Faster document review turnaround", icon: "solar:arrow-right-linear" },
+                { label: "Higher reviewer productivity", icon: "solar:graph-up-linear" },
                 { label: "Reduced compliance misses", icon: "solar:shield-check-linear" }
               ].map((metric, i) => (
                 <div key={i} className="flex items-start gap-4 p-4 rounded-lg bg-emerald-50 border border-emerald-200">
@@ -634,8 +631,8 @@ export default function Smartops() {
             <h3 className="text-lg font-bold text-neutral-900 mb-6">UX Metrics</h3>
             <div className="space-y-4">
               {[
-                { label: "Reduced manual interpretation time", icon: "solar:clock-linear" },
-                { label: "Higher inference adoption rate", icon: "solar:hand-up-linear" },
+                { label: "Reduced manual interpretation time", icon: "solar:arrow-right-linear" },
+                { label: "Higher inference adoption rate", icon: "solar:check-circle-linear" },
                 { label: "Reduced reviewer confusion", icon: "solar:question-circle-linear" },
                 { label: "Increased trust score in AI outputs", icon: "solar:star-shine-linear" }
               ].map((metric, i) => (

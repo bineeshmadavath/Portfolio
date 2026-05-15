@@ -12,7 +12,7 @@ export default function Home() {
       <section className="pt-12 md:pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Intro */}
-          <div className="lg:col-span-7 flex flex-col">
+          <div className="lg:col-span-8 flex flex-col">
             <div className="inline-flex self-start items-center gap-2 px-3 py-1 rounded-full bg-white border border-neutral-200 text-xs font-medium text-neutral-600 mb-8 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               Strategic Product Design Lead
@@ -20,13 +20,13 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 leading-[1.1] mb-6">
               Hi, I'm Bineesh.
             </h1>
-            <p className="text-sm text-neutral-600 leading-relaxed mb-4">
+            <p className="text-s text-neutral-600 leading-relaxed mb-4">
               I am a Strategic Product Design Lead with over 15 years of total IT experience, including 8+ years specializing in UX/UI design for enterprise-scale digital transformation.
             </p>
-            <p className="text-sm text-neutral-600 leading-relaxed mb-4">
+            <p className="text-s text-neutral-600 leading-relaxed mb-4">
               My unique hybrid background in UI Development and Design Systems enables seamless collaboration between creative vision and engineering execution. I am an expert in human-centered design, accessibility (WCAG), and AI-augmented workflows.
             </p>
-            <p className="text-sm text-neutral-600 leading-relaxed mb-10">
+            <p className="text-s text-neutral-600 leading-relaxed mb-10">
               I have a proven track record of optimizing complex workflows for Intelligent Document Processing (IDP), Hospitality, and Marketplace platforms, always ensuring products are intuitive, scalable, and technically sound.
             </p>
             <div className="flex flex-wrap items-center gap-4">
@@ -44,11 +44,11 @@ export default function Home() {
           </div>
 
           {/* Right: Image */}
-          <div className="lg:col-span-5">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200 relative">
+          <div className="lg:col-span-4">
+            <div className="aspect-[2/2] rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200 relative">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
-                alt="Design and tech workspace"
+                src="/bineesh-profile-v2.png"
+                alt="Bineesh Photo"
                 className="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-2xl pointer-events-none"></div>
