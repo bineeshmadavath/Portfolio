@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom'
 import Button from '../components/Button'
 import heroImage from '../../heroimage-physiotherapy.png'
 
+// Color token for subheading and chip
+const PHYSIO_ACCENT = '#00ACCF';
+
 export default function PhysioBooking() {
   return (
     <div className="animate-in fade-in duration-700 slide-in-from-bottom-4 pb-24 bg-white rounded-[20px]">
@@ -9,7 +12,7 @@ export default function PhysioBooking() {
       <div className="max-w-6xl mx-auto px-6 pt-8 pb-4">
         <Link 
           to="/work" 
-          className="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-violet-600 transition-colors group"
+          className="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover: style={{ color: PHYSIO_ACCENT }} transition-colors group"
         >
           <iconify-icon icon="solar:arrow-left-linear" width="18" height="18" className="group-hover:-translate-x-1 transition-transform"></iconify-icon>
           Back to Work
@@ -19,7 +22,10 @@ export default function PhysioBooking() {
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-6 py-12 lg:py-20 flex flex-col lg:flex-row items-center gap-16">
         <div className="flex-1">
-          <div className="inline-block px-3 py-1 bg-violet-50 text-violet-600 font-semibold text-xs tracking-wider uppercase rounded-full mb-6">
+          <div
+            className="inline-block px-3 py-1 bg-violet-50 font-semibold text-xs tracking-wider uppercase rounded-full mb-6"
+            style={{ color: PHYSIO_ACCENT }}
+          >
             UX Case Study
           </div>
           <h1 className="text-4xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-[1.1] tracking-tight">
@@ -90,7 +96,7 @@ export default function PhysioBooking() {
         
         {/* 01 THE PROBLEM */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-6 flex items-center gap-2">
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-6 flex items-center gap-2" style={{ color: '#00ACCF' }}>
             <span>01</span> THE PROBLEM
           </h2>
           <p className="text-neutral-600 mb-8 leading-relaxed">
@@ -116,7 +122,7 @@ export default function PhysioBooking() {
 
         {/* 02 PROJECT GOALS */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-6 flex items-center gap-2">
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-6 flex items-center gap-2" style={{ color: '#00ACCF' }}>
             <span>02</span> PROJECT GOALS
           </h2>
           <div className="space-y-4">
@@ -154,7 +160,7 @@ export default function PhysioBooking() {
 
       {/* 03 USERS & STAKEHOLDERS */}
       <div className="max-w-6xl mx-auto px-6 pb-20 border-b border-neutral-100">
-        <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-8 flex items-center gap-2">
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-8 flex items-center gap-2" style={{ color: '#00ACCF' }}>
           <span>03</span> USERS & STAKEHOLDERS
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -202,7 +208,7 @@ export default function PhysioBooking() {
         
         {/* 04 THE SOLUTION */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-6 flex items-center gap-2">
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-6 flex items-center gap-2" style={{ color: '#00ACCF' }}>
             <span>04</span> THE SOLUTION
           </h2>
           <p className="text-neutral-600 mb-10 leading-relaxed max-w-3xl">
@@ -248,7 +254,7 @@ export default function PhysioBooking() {
 
         {/* 05 KEY FEATURES */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-6 flex items-center gap-2">
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-6 flex items-center gap-2" style={{ color: '#00ACCF' }}>
             <span>05</span> KEY FEATURES
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -275,11 +281,10 @@ export default function PhysioBooking() {
       </div>
 
       {/* 06 & 07 Sections */}
-      <div className="max-w-6xl mx-auto px-6 py-20 border-b border-neutral-100 flex flex-col lg:flex-row gap-16">
-        
+      <div className="max-w-6xl mx-auto px-6 py-20 border-b border-neutral-100 flex flex-col gap-16">
         {/* 06 USER JOURNEY */}
-        <div className="lg:w-1/2">
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-10 flex items-center gap-2">
+        <div>
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-10 flex items-center gap-2" style={{ color: '#00ACCF' }}>
             <span>06</span> USER JOURNEY
           </h2>
           
@@ -363,9 +368,9 @@ export default function PhysioBooking() {
         </div>
 
         {/* 07 ADMIN DASHBOARD PREVIEW */}
-        <div className="lg:w-1/2">
+        <div>
           <div className="flex justify-between items-end mb-6">
-            <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase flex items-center gap-2">
+            <h2 className="text-sm font-bold tracking-wider uppercase flex items-center gap-2" style={{ color: '#00ACCF' }}>
               <span>07</span> ADMIN DASHBOARD PREVIEW
             </h2>
             <div className="flex items-center gap-2 text-sm text-neutral-600 font-medium">
@@ -406,7 +411,7 @@ export default function PhysioBooking() {
         
         {/* 08 UX & DESIGN DECISIONS */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-8 flex items-center gap-2">
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-8 flex items-center gap-2" style={{ color: '#00ACCF' }}>
             <span>08</span> UX & DESIGN DECISIONS
           </h2>
           <div className="space-y-6">
@@ -450,7 +455,7 @@ export default function PhysioBooking() {
 
         {/* 09 IMPACT */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-8 flex items-center gap-2">
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-8 flex items-center gap-2" style={{ color: '#00ACCF' }}>
             <span>09</span> IMPACT
           </h2>
           <p className="text-sm text-neutral-600 mb-6">The platform is designed to create measurable impact across users and business operations.</p>
@@ -480,7 +485,7 @@ export default function PhysioBooking() {
 
         {/* 10 FUTURE ENHANCEMENTS */}
         <div>
-          <h2 className="text-sm font-bold text-violet-600 tracking-wider uppercase mb-8 flex items-center gap-2">
+          <h2 className="text-sm font-bold tracking-wider uppercase mb-8 flex items-center gap-2" style={{ color: '#00ACCF' }}>
             <span>10</span> FUTURE ENHANCEMENTS
           </h2>
           <div className="space-y-3">
