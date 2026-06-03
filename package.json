@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bineeshmadavath.github.io/Portfolio",
   "name": "ux-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -a",
     "start": "react-scripts start",
     "lint": "eslint .",
     "preview": "vite preview"
